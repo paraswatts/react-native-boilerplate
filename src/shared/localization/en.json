@@ -1,0 +1,22 @@
+{
+  "labels": {
+    "welcome": "Welcome to react native",
+    "select_photo": "Select Photo"
+  },
+  "heading": {
+    "home": "Home Screen"
+  },
+  "sub-heading": {
+    "home": "This is a home screen"
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "gender": "Gender",
+    "multi": "Multi Select",
+  },
+  "errors": {
+    "name_required": "Please enter name",
+    "email_required": "Please enter email"
+  }
+}
