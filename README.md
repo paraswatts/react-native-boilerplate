@@ -1,1 +1,1 @@
-#GIRCMobile
+#ReactNativeBoilerplate
