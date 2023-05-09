@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "splash_girc.png",
+      "filename" : "sample.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "splash_girc 1.png",
+      "filename" : "sample@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "splash_girc 2.png",
+      "filename" : "sample@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -4,6 +4,7 @@ export const SCREENS = {
 
 export const IMAGES = {
   GRADIENT: require("@assets/images/gradient.png"),
+  CHECK: require("@assets/images/check.png"),
 };
 
 export const FIELD_NAMES = {
@@ -13,5 +14,7 @@ export const FIELD_NAMES = {
   SPORTS: "sports",
   COUNTRY: "country",
   SINGLE_COUNTRY: "single_country",
-  PHOTO: "photo"
+  PHOTO: "photo",
+  DESCRIPTION: "description",
+  TERMS: "terms"
 };

@@ -1,7 +1,8 @@
 {
   "labels": {
     "welcome": "Welcome to react native",
-    "select_photo": "Select Photo"
+    "select_photo": "Select Photo",
+    "terms": "I accept the terms and conditions"
   },
   "heading": {
     "home": "Home Screen"
@@ -14,9 +15,16 @@
     "email": "Email",
     "gender": "Gender",
     "multi": "Multi Select",
+    "description": "Description"
   },
   "errors": {
     "name_required": "Please enter name",
     "email_required": "Please enter email"
+  },
+  "placeholder": {
+    "description": "Enter the detail"
+  },
+  "buttons": {
+    "submit": "Submit"
   }
 }

@@ -2,6 +2,7 @@
 #import "RNSplashScreen.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <Firebase.h>
 
 @implementation AppDelegate
 
@@ -13,7 +14,8 @@
   self.initialProps = @{};
   bool didFinish=[super application:application didFinishLaunchingWithOptions:launchOptions];
   [RNSplashScreen show];
-
+  [FIRApp configure];
+  
   return didFinish;
 }
 

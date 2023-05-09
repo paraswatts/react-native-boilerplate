@@ -20,22 +20,28 @@ import CustomRadioInput from "components/custom-radio-input/Input";
 import { Countries, FavoriteSports, Genders } from "utils";
 import CustomDropdownInput from "components/custom-dropdown-input/Input";
 import CustomUploadBox from "components/custom-upload-box/Input";
+import CustomTextArea from "components/custom-text-area/Input";
+import CustomCheckbox from "components/custom-checkbox/Checkbox";
+import { palette } from "@theme/themes";
+import RNBounceable from "@freakycoder/react-native-bounceable";
+import fonts from "@fonts";
+import { trans } from "shared/localization";
 
 interface HomeScreenProps { }
 
+const FormSchema = Yup.object().shape({
+  [FIELD_NAMES.NAME]: Yup.string()
+    .required(trans("errors.name_required")),
+  [FIELD_NAMES.EMAIL]: Yup.string()
+    .email()
+    .required(trans("errors.email_required"))
+})
 
 const HomeScreen: React.FC<HomeScreenProps> = () => {
   const theme = useTheme();
   const { colors } = theme;
   const styles = useMemo(() => createStyles(theme), [theme]);
   const [hasImage] = useState<boolean>(false);
-
-  const FormSchema = Yup.object().shape({
-    [FIELD_NAMES.NAME]: Yup.number()
-      .required(trans("errors.name_required")),
-    [FIELD_NAMES.EMAIL]: Yup.number()
-      .required(trans("errors.email_required"))
-  })
 
   return (
     <ScreenHOC
@@ -51,10 +57,11 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
       backgroundColor="teal"
       headerBackgroundColor={colors.secondaryColor}
       isDarkHeader
+      statusBackgroundColor={colors.secondaryColor}
     >
       <KeyboardAwareScrollView contentContainerStyle={styles.container}>
         <View style={styles.innerContainer}>
-          <Text>
+          <Text color={palette.white}>
             {trans('labels.welcome')}
           </Text>
           <Formik
@@ -64,7 +71,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
             }}
             validationSchema={FormSchema}
             onSubmit={(values) => {
-
+              alert(JSON.stringify(values))
             }}
           >
             {({ handleSubmit, setFieldValue }) =>
@@ -135,6 +142,27 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
                     setFieldValue(FIELD_NAMES.PHOTO, value);
                   }}
                 />
+                <Field
+                  addMarginTop
+                  placeholder={trans("placeholder.description")}
+                  name={FIELD_NAMES.DESCRIPTION}
+                  component={CustomTextArea}
+                />
+                <Field
+                  addMarginTop
+                  label={trans("labels.terms")}
+                  name={FIELD_NAMES.TERMS}
+                  component={CustomCheckbox}
+                />
+                <RNBounceable style={styles.button} onPress={handleSubmit}>
+                  <Text
+                    color={palette.white}
+                    fontFamily={fonts.sourcePro.semiBold}
+                    style={styles.buttonText}
+                  >
+                    {trans("buttons.submit")}
+                  </Text>
+                </RNBounceable>
               </View>}
           </Formik>
         </View>

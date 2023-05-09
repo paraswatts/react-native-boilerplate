@@ -9,6 +9,7 @@ import BouncyCheckbox, {
 } from "react-native-bouncy-checkbox";
 import fonts from "@fonts";
 import { IMAGES } from "@shared-constants";
+import { palette } from "@theme/themes";
 
 interface ICustomCheckboxProps extends IBouncyCheckboxProps {
   label: string;
@@ -45,7 +46,7 @@ const CustomCheckbox: FC<ICustomCheckboxProps> = ({
           innerIconStyle={{ borderRadius: 8 }}
           textStyle={{
             fontFamily: fonts.sourcePro.regular,
-            color: colors.darkSilver,
+            color: palette.white,
           }}
           checkIconImageSource={IMAGES.CHECK}
           onPress={(isChecked: boolean) => {

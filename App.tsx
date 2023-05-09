@@ -14,6 +14,7 @@ import { initializeReduxService } from "@services/redux/ReduxService";
 import LoaderHOC from "components/loader-hoc";
 import { ToastProvider } from 'react-native-toast-notifications'
 import CustomToast from "components/custom-toast/Input";
+import { initializeNotifications } from "utils";
 
 LogBox.ignoreAllLogs();
 
@@ -24,6 +25,7 @@ const App = () => {
     initializeReduxService(store.dispatch, store.getState);
   });
   React.useEffect(() => {
+    initializeNotifications();
     StatusBar.setBarStyle(isDarkMode ? "light-content" : "dark-content");
     if (isAndroid) {
       StatusBar.setBackgroundColor("rgba(0,0,0,0)");
