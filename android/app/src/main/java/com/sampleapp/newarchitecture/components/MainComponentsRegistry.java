@@ -1,4 +1,4 @@
-package com.cmihealth.caregiver.newarchitecture.components;
+package com.sampleapp.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

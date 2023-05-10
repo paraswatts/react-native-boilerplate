@@ -1,4 +1,4 @@
-package com.cmihealth.caregiver.newarchitecture;
+package com.sampleapp.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.cmihealth.caregiver.BuildConfig;
-import com.cmihealth.caregiver.newarchitecture.components.MainComponentsRegistry;
-import com.cmihealth.caregiver.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.sampleapp.BuildConfig;
+import com.sampleapp.newarchitecture.components.MainComponentsRegistry;
+import com.sampleapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

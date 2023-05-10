@@ -3,7 +3,7 @@ import { useToast } from 'react-native-toast-notifications';
 import ImagePicker from 'react-native-image-crop-picker';
 import messaging from '@react-native-firebase/messaging';
 import { Platform } from 'react-native';
-
+import { PermissionsAndroid } from 'react-native';
 export const capitalizeFirstLetter = (str: string) => {
   return str && str.length ? str.charAt(0).toUpperCase() + str.slice(1) : str;
 };
@@ -97,6 +97,7 @@ export const initializeNotifications = () => {
     const enabled =
       authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
       authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+    PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
     if (enabled) {
       messaging().onMessage(async remoteMessage => {
         console.log('onMessage A new FCM message arrived!', JSON.stringify(remoteMessage));

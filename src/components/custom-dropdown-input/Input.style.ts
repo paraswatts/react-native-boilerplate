@@ -19,7 +19,7 @@ export default (theme: ExtendedTheme, addMarginTop: boolean) => {
   return StyleSheet.create<Style>({
     listContainer: {
       paddingHorizontal: _scaleText(8).fontSize,
-      maxHeight: ScreenHeight * 0.32
+      maxHeight: ScreenHeight * 0.32,
     },
     container: {
       marginTop: addMarginTop ? _scaleText(24).fontSize : 0,
@@ -49,9 +49,7 @@ export default (theme: ExtendedTheme, addMarginTop: boolean) => {
       flexDirection: "row",
       width: "100%",
       alignItems: "center",
-      backgroundColor: include
-        ? colors.lumber
-        : palette.white,
+      backgroundColor: include ? colors.lumber : palette.white,
       marginBottom: _scaleText(12).fontSize,
       padding: _scaleText(12).fontSize,
       borderRadius: 100,
@@ -68,7 +66,7 @@ export default (theme: ExtendedTheme, addMarginTop: boolean) => {
     optionText: {
       fontSize: _scaleText(16).fontSize,
       flex: 1,
-      marginLeft: _scaleText(40).fontSize
-    }
+      marginLeft: _scaleText(40).fontSize,
+    },
   });
 };

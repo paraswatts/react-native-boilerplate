@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "133728946882",
+    "project_id": "asthma-go",
+    "storage_bucket": "asthma-go.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133728946882:android:7b0079cdea49b85c84495b",
+        "android_client_info": {
+          "package_name": "com.cmihealth.asthmago"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcTxXTna-8mRAqvbGu14ghB85nFs8odts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "133728946882-cmff4606ume3a1e9pom463rvkqss1bgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sampleapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133728946882:android:775577059a1a865f84495b",
+        "android_client_info": {
+          "package_name": "com.sampleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcTxXTna-8mRAqvbGu14ghB85nFs8odts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "133728946882-cmff4606ume3a1e9pom463rvkqss1bgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sampleapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133728946882:android:b105b4602bd29d2d84495b",
+        "android_client_info": {
+          "package_name": "com.cmihealth.oxyknight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcTxXTna-8mRAqvbGu14ghB85nFs8odts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "133728946882-cmff4606ume3a1e9pom463rvkqss1bgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sampleapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133728946882:android:35863ca080b2280884495b",
+        "android_client_info": {
+          "package_name": "com.cmihealth.spirolink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcTxXTna-8mRAqvbGu14ghB85nFs8odts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133728946882-l6i8vsmtqpu575lcpelsbr96fmr2kr09.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "133728946882-cmff4606ume3a1e9pom463rvkqss1bgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sampleapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
