@@ -527,7 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = sampleapp/sampleapp.entitlements;
-				CURRENT_PROJECT_VERSION = 2.43;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3UDR554ER;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = sampleapp/Info.plist;
@@ -537,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.43;
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -563,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = sampleapp/sampleapp.entitlements;
-				CURRENT_PROJECT_VERSION = 2.43;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3UDR554ER;
 				INFOPLIST_FILE = sampleapp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = sampleapp;
@@ -572,7 +572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.43;
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

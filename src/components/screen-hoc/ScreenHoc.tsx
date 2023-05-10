@@ -27,6 +27,8 @@ interface IScreenHOCProps {
   customRightIconStyle?: ViewStyle;
   backgroundColor?: string;
   headerBackgroundColor?: string;
+  headingTextColor?: string;
+  subHeadingTextColor?: string;
 }
 const ScreenHOC: FC<IScreenHOCProps> = ({
   children,
@@ -45,7 +47,9 @@ const ScreenHOC: FC<IScreenHOCProps> = ({
   customLeftIconStyle,
   customRightIconStyle,
   backgroundColor,
-  headerBackgroundColor
+  headerBackgroundColor,
+  headingTextColor,
+  subHeadingTextColor
 }) => {
   console.log("backgroundColor", backgroundColor)
   return (
@@ -72,6 +76,8 @@ const ScreenHOC: FC<IScreenHOCProps> = ({
           customLeftIconStyle={customLeftIconStyle}
           customRightIconStyle={customRightIconStyle}
           backgroundColor={headerBackgroundColor}
+          headingTextColor={headingTextColor}
+          subHeadingTextColor={subHeadingTextColor}
         />
       )}
       <View style={{ flex: 1 }}>{children}</View>

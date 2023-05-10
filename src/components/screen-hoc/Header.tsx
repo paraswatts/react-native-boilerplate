@@ -18,6 +18,8 @@ interface IBackgroundProps {
   customLeftIconStyle?: ViewStyle;
   customRightIconStyle?: ViewStyle;
   backgroundColor?: string;
+  headingTextColor?: string;
+  subHeadingTextColor?: string;
 }
 
 const Header: FC<IBackgroundProps> = ({
@@ -30,7 +32,9 @@ const Header: FC<IBackgroundProps> = ({
   isDarkHeader = false,
   customLeftIconStyle = {},
   customRightIconStyle = {},
-  backgroundColor = "transparent"
+  backgroundColor = "transparent",
+  headingTextColor = palette.darkGrayText,
+  subHeadingTextColor = palette.darkGrayText,
 }) => {
   const theme = useTheme();
   const { colors } = theme;
@@ -47,7 +51,7 @@ const Header: FC<IBackgroundProps> = ({
         <View style={styles.headingContainer}>
           {heading &&
             <Text
-              color={colors.darkGrayText}
+              color={headingTextColor}
               fontFamily={fonts.sourcePro.semiBold}
               style={styles.heading}
               numberOfLines={1}
@@ -55,7 +59,7 @@ const Header: FC<IBackgroundProps> = ({
               {heading}
             </Text>}
           {subHeading && <Text
-            color={colors.darkGrayText}
+            color={subHeadingTextColor}
             style={styles.subHeading}
           >
             {subHeading}

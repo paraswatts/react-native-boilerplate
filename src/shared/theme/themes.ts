@@ -24,6 +24,7 @@ export const palette = {
   dynamicBackground: "#fff",
   transparent: "transparent",
   calpyse: "#2b7488",
+  darkGrayText: "#191919",
 };
 
 export const LightTheme: ExtendedTheme = {
